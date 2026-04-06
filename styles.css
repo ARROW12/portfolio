@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#menuBtn {
+  display: none;
+  font-size: 22px;
+  background: none;
+  color: white;
+  border: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* HERO */
+header {
+  text-align: center;
+  padding: 60px 15px;
+}
+
+/* SECTIONS */
+section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* GLASS */
+.glass {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+/* CARD */
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* CHAT */
+#chatbox {
+  height: 120px;
+  overflow-y: auto;
+  background: #1e293b;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input, button {
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+/* TABLET */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header {
+    padding: 80px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header {
+    padding: 120px;
+  }
+}
+
+/* MOBILE MENU */
+@media (max-width: 600px) {
+  #menuBtn {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #1e293b;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+}
+
+/* WATCH (ultra small devices) */
+@media (max-width: 300px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
