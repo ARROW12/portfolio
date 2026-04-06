@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tejas Anand | AI + Data Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #e2e8f0;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+}
+
+/* ===== NAV ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-weight: 600;
+  color: #60a5fa;
+}
+
+.links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #94a3b8;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 140px 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+/* CTA */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== SECTION ===== */
+section {
+  max-width: 950px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* ===== GLASS ===== */
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: rgba(255,255,255,0.04);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(59,130,246,0.3);
+}
+
+/* ===== METRICS ===== */
+.metrics {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.metric {
+  background: rgba(255,255,255,0.05);
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Tejas Anand</div>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#projects">Work</a>
+    <a href="https://www.linkedin.com/in/tejas-anand-b4489276" target="_blank">LinkedIn</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>AI + Data Engineer</h1>
+  <p>Designing scalable data systems & AI-powered platforms</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<!-- IMPACT -->
+<section class="fade-up">
+  <h2>Impact</h2>
+  <div class="metrics">
+    <div class="metric">
+      <h3>⚡ 30%+</h3>
+      <p>Pipeline Optimization</p>
+    </div>
+    <div class="metric">
+      <h3>🚀 Scalable</h3>
+      <p>AWS Data Systems</p>
+    </div>
+    <div class="metric">
+      <h3>🤖 AI</h3>
+      <p>LLM-Based Tools</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade-up">
+  <div class="glass">
+    <h2>About</h2>
+    <p>
+      I build scalable data systems and AI-driven platforms that transform raw data into actionable intelligence.
+    </p>
+    <p>
+      My work combines distributed systems, data engineering, and modern AI to create production-ready solutions.
+    </p>
+    <p>
+      🎓 M.Tech AI & ML (WILP), BITS Pilani (Apr 2026)
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Selected Work</h2>
+
+  <div class="grid">
+
+    <div class="card fade-up">
+      <h3>ChatSTTM</h3>
+      <p><b>Problem:</b> Complex SQL querying for large datasets</p>
+      <p><b>Solution:</b> Built AI system that generates SQL using NLP</p>
+      <p><b>Impact:</b> Reduced query time & improved productivity</p>
+    </div>
+
+    <div class="card fade-up">
+      <h3>AI Data Assistant</h3>
+      <p><b>Problem:</b> Hard to find relevant tables & joins</p>
+      <p><b>Solution:</b> Intelligent recommendation system</p>
+      <p><b>Impact:</b> Faster data discovery & insights</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="fade-up">
+  <h2>What I Build</h2>
+
+  <div class="grid">
+    <div class="card">AI Systems</div>
+    <div class="card">ETL Pipelines</div>
+    <div class="card">LLM Apps</div>
+    <div class="card">Cloud Platforms</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="fade-up">
+  <h2>Let’s Work Together</h2>
+  <p>Open to high-impact AI + Data Engineering roles</p>
+  <a href="mailto:tejasnov22@gmail.com" class="btn">Contact Me</a>
+</section>
+
+<footer>
+  © 2026 Tejas Anand
+</footer>
+
+<script>
+const elements = document.querySelectorAll(".fade-up");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
