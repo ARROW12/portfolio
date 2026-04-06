@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tejas Anand — Data Engineer building cloud-native data platforms, scalable pipelines, and AI-assisted systems." />
+  <title>Tejas Anand | Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --text-3xl: clamp(2.8rem, 1rem + 4.4vw, 5.4rem);
+      --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem; --space-5:1.25rem; --space-6:1.5rem; --space-8:2rem; --space-10:2.5rem; --space-12:3rem; --space-16:4rem; --space-20:5rem; --space-24:6rem;
+      --color-bg:#f7f6f2; --color-surface:#fcfbf8; --color-surface-2:#f1eee7; --color-surface-3:#e8e2d8; --color-border:rgba(30,28,24,.1);
+      --color-text:#171614; --color-text-muted:#666159; --color-text-faint:#9a958d; --color-primary:#0b6b73; --color-primary-2:#335f9d; --color-soft:rgba(11,107,115,.08);
+      --shadow-sm:0 1px 2px rgba(30,28,24,.06); --shadow-md:0 16px 40px rgba(30,28,24,.08); --shadow-lg:0 32px 78px rgba(30,28,24,.12);
+      --radius-sm:.5rem; --radius-md:.85rem; --radius-lg:1.2rem; --radius-xl:1.7rem; --radius-full:9999px;
+      --font-body:'Satoshi',Inter,sans-serif; --font-display:'Cabinet Grotesk','Satoshi',sans-serif; --content:1140px; --grid:rgba(23,22,20,.075);
+    }
+    [data-theme="dark"] {
+      --color-bg:#090e14; --color-surface:#0f1722; --color-surface-2:#121b28; --color-surface-3:#172231; --color-border:rgba(237,242,247,.09);
+      --color-text:#edf2f7; --color-text-muted:#9caabc; --color-text-faint:#6a7789; --color-primary:#8ae3de; --color-primary-2:#91b6ff; --color-soft:rgba(138,227,222,.08);
+      --shadow-sm:0 1px 2px rgba(0,0,0,.2); --shadow-md:0 18px 46px rgba(0,0,0,.28); --shadow-lg:0 34px 88px rgba(0,0,0,.42); --grid:rgba(255,255,255,.075);
+    }
+    @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--color-bg:#090e14; --color-surface:#0f1722; --color-surface-2:#121b28; --color-surface-3:#172231; --color-border:rgba(237,242,247,.09); --color-text:#edf2f7; --color-text-muted:#9caabc; --color-text-faint:#6a7789; --color-primary:#8ae3de; --color-primary-2:#91b6ff; --color-soft:rgba(138,227,222,.08); --shadow-sm:0 1px 2px rgba(0,0,0,.2); --shadow-md:0 18px 46px rgba(0,0,0,.28); --shadow-lg:0 34px 88px rgba(0,0,0,.42); --grid:rgba(255,255,255,.075);}}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-text-size-adjust:none;text-size-adjust:none;scroll-behavior:smooth;scroll-padding-top:6rem}
+    body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;color:var(--color-text);background:
+      radial-gradient(circle at 12% 12%, rgba(138,227,222,.12), transparent 22%),
+      radial-gradient(circle at 88% 0%, rgba(145,182,255,.12), transparent 18%),
+      linear-gradient(180deg, var(--color-bg), #091019 84%)}
+    img,svg{display:block;max-width:100%;height:auto} a{text-decoration:none;color:inherit} button{background:none;border:none;color:inherit;cursor:pointer}
+    :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+    @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+    .shell{position:relative;isolation:isolate}.shell::before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(var(--grid) 1px, transparent 1px),linear-gradient(90deg,var(--grid) 1px, transparent 1px);background-size:84px 84px;mask:linear-gradient(180deg,rgba(0,0,0,.22),transparent 84%);z-index:-1}
+    .container{width:min(calc(100% - 2rem),var(--content));margin-inline:auto}
+    .skip-link{position:absolute;left:1rem;top:-3rem;background:var(--color-primary);color:#061015;padding:.75rem 1rem;border-radius:var(--radius-full);z-index:1000}.skip-link:focus{top:1rem}
+    header{position:sticky;top:0;z-index:100;background:color-mix(in srgb, var(--color-bg) 76%, transparent);backdrop-filter:blur(18px);border-bottom:1px solid var(--color-border)}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:var(--space-4);padding:var(--space-4) 0}
+    .brand{display:flex;align-items:center;gap:var(--space-3)}
+    .mark{width:2.55rem;height:2.55rem;border-radius:.95rem;background:linear-gradient(135deg,var(--color-soft),transparent),var(--color-surface);border:1px solid var(--color-border);display:grid;place-items:center;box-shadow:var(--shadow-sm)}
+    .mark svg{width:1.3rem;height:1.3rem;color:var(--color-primary)}
+    .brand-copy strong{display:block;font-size:var(--text-sm);text-transform:uppercase;letter-spacing:.08em}
+    .brand-copy span{display:block;font-size:var(--text-xs);color:var(--color-text-muted)}
+    .nav-links{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem}
+    .nav-links a,.theme-toggle{min-width:44px;min-height:44px;padding:.75rem 1rem;border-radius:var(--radius-full);font-size:var(--text-sm);color:var(--color-text-muted);transition:all .18s cubic-bezier(.16,1,.3,1)}
+    .nav-links a:hover,.theme-toggle:hover{background:var(--color-surface);color:var(--color-text)}
+    main{padding-bottom:var(--space-24)} section{padding-block:clamp(var(--space-12),8vw,var(--space-24))}
+    .eyebrow{display:inline-flex;align-items:center;gap:.6rem;padding:.48rem .82rem;border:1px solid var(--color-border);border-radius:var(--radius-full);font-size:var(--text-xs);letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-muted);background:color-mix(in srgb,var(--color-surface) 92%, transparent)}
+    .eyebrow::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:var(--color-primary);box-shadow:0 0 0 6px rgba(138,227,222,.1)}
+    .section-head{display:grid;gap:var(--space-3);margin-bottom:var(--space-8);max-width:44rem}
+    .section-head h2{font-family:var(--font-display);font-size:var(--text-2xl);line-height:1;letter-spacing:-.04em}.section-head p{color:var(--color-text-muted)}
+    .hero{padding-top:clamp(var(--space-12),10vw,var(--space-24))}
+    .hero-grid{display:grid;gap:var(--space-8);align-items:end}
+    .hero-copy h1{font-family:var(--font-display);font-size:clamp(3.8rem,8vw,7.2rem);line-height:.92;letter-spacing:-.055em;max-width:9ch}
+    .hero-copy .lead{margin-top:var(--space-6);font-size:var(--text-lg);max-width:43rem;color:var(--color-text-muted)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-8)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.95rem 1.2rem;border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:700;transition:all .18s cubic-bezier(.16,1,.3,1);border:1px solid transparent}
+    .btn.primary{background:var(--color-primary);color:#061015;box-shadow:var(--shadow-md)} .btn.primary:hover{transform:translateY(-2px)}
+    .btn.secondary{border-color:var(--color-border);background:rgba(255,255,255,.02)} .btn.secondary:hover{background:var(--color-soft);border-color:rgba(138,227,222,.28)}
+    .hero-panel{padding:var(--space-6);border:1px solid var(--color-border);border-radius:var(--radius-xl);background:linear-gradient(180deg,rgba(255,255,255,.02),transparent),var(--color-surface);box-shadow:var(--shadow-lg)}
+    .hero-panel-top{display:flex;justify-content:space-between;gap:var(--space-4);align-items:flex-start}
+    .status{display:flex;align-items:center;gap:.55rem;font-size:var(--text-xs);letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-muted)}
+    .status::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:#99d36e;box-shadow:0 0 0 6px rgba(153,211,110,.1)}
+    .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3);margin-top:var(--space-5)}
+    .stat{padding:var(--space-4);border:1px solid var(--color-border);border-radius:var(--radius-lg);background:var(--color-surface-2)}
+    .stat span{display:block;font-size:var(--text-xs);letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:.35rem}
+    .stat strong{display:block;font-family:var(--font-display);font-size:var(--text-xl);line-height:1}.stat p{margin-top:.4rem;font-size:var(--text-sm);color:var(--color-text-muted)}
+    .grid-2,.grid-3{display:grid;gap:var(--space-4)}
+    .case,.stack,.contact-card,.experience-card{padding:var(--space-6);border-radius:var(--radius-xl);background:linear-gradient(180deg,rgba(255,255,255,.02),transparent),var(--color-surface);border:1px solid var(--color-border);box-shadow:var(--shadow-sm)}
+    .case .tag{display:inline-flex;padding:.4rem .72rem;border-radius:var(--radius-full);font-size:var(--text-xs);letter-spacing:.1em;text-transform:uppercase;background:var(--color-soft);color:var(--color-primary)}
+    .case h3,.stack h3,.contact-card h3,.experience-card h3{margin-top:var(--space-4);font-size:var(--text-lg);line-height:1.08}
+    .case p,.stack p,.contact-card p,.experience-card p{margin-top:var(--space-3);color:var(--color-text-muted)}
+    .meta{display:grid;gap:var(--space-3);margin-top:var(--space-5)}
+    .meta div{padding:var(--space-4);border-radius:var(--radius-lg);background:var(--color-surface-2);border:1px solid var(--color-border)}
+    .meta span{display:block;font-size:var(--text-xs);letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:.35rem}
+    .meta strong{font-size:var(--text-sm)}
+    .experience-card ul{list-style:none;display:grid;gap:var(--space-3);margin-top:var(--space-5)}
+    .experience-card li{position:relative;padding-left:1rem;color:var(--color-text-muted)}
+    .experience-card li::before{content:"";position:absolute;left:0;top:.72em;width:.42rem;height:.42rem;border-radius:50%;background:var(--color-primary)}
+    .experience-top{display:flex;justify-content:space-between;gap:var(--space-4);align-items:flex-start;flex-wrap:wrap}
+    .pill-row{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:var(--space-4)}
+    .pill{padding:.45rem .75rem;border-radius:var(--radius-full);background:var(--color-surface-2);border:1px solid var(--color-border);font-size:var(--text-xs);letter-spacing:.05em;text-transform:uppercase;color:var(--color-text-muted)}
+    footer{padding:var(--space-8) 0;border-top:1px solid var(--color-border);color:var(--color-text-faint)} .foot{display:flex;justify-content:space-between;gap:var(--space-3);flex-wrap:wrap}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)} .reveal.is-visible{opacity:1;transform:none}
+    @media (min-width: 900px){.hero-grid{grid-template-columns:1.15fr .85fr}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.meta{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media (max-width: 899px){.nav{flex-direction:column;align-items:flex-start}.stats,.meta,.grid-3{grid-template-columns:1fr}.hero-copy h1{max-width:11ch}}
+  </style>
+</head>
+<body>
+  <a href="#content" class="skip-link">Skip to content</a>
+  <div class="shell">
+    <header>
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="Tejas Anand home">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18 12 5l7 13"></path><path d="M8.8 11.2h6.4"></path></svg>
+          </span>
+          <span class="brand-copy">
+            <strong>Tejas Anand</strong>
+            <span>Data Engineer</span>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#stack">Stack</a>
+          <a href="#contact">Contact</a>
+          <a href="https://www.linkedin.com/in/tejas-anand-b4489276" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <button class="theme-toggle" data-theme-toggle aria-label="Switch theme"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero container" id="top">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">AWS Certified • data platforms • AI systems</span>
+            <h1>I build data platforms that remove operational friction.</h1>
+            <p class="lead">AWS Certified Data Engineer with 5+ years of experience designing cloud-native platforms, production-grade pipelines, and AI-assisted workflows in enterprise and life sciences environments.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#work">View selected work</a>
+              <a class="btn secondary" href="#contact">Contact me</a>
+            </div>
+          </div>
+          <aside class="hero-panel reveal" aria-label="Highlights">
+            <div class="hero-panel-top">
+              <p class="status">Hyderabad, India</p>
+              <span class="pill">M.Tech AI & ML · Apr 2026</span>
+            </div>
+            <div class="stats">
+              <article class="stat"><span>Experience</span><strong>5+ yrs</strong><p>Cloud-native data engineering and platform delivery.</p></article>
+              <article class="stat"><span>Optimization</span><strong>40%</strong><p>Pipeline processing time reduction.</p></article>
+              <article class="stat"><span>Automation</span><strong>60%</strong><p>Faster deployment through self-service workflows.</p></article>
+              <article class="stat"><span>Integrity</span><strong>99.9%</strong><p>Migration quality across 8+ platforms.</p></article>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="container reveal" id="work">
+        <div class="section-head">
+          <span class="eyebrow">Selected systems</span>
+          <h2>High-leverage systems. Measurable outcomes.</h2>
+          <p>Focused on platform acceleration, governed data operations, and AI-enabled workflow design.</p>
+        </div>
+        <div class="grid-2">
+          <article class="case">
+            <span class="tag">MSD</span>
+            <h3>Self-service automation for data product delivery</h3>
+            <p>Architected AWS data infrastructure for 50+ stakeholders, reduced pipeline processing time by 40%, and introduced automation patterns that cut deployment time by 60%.</p>
+            <div class="meta">
+              <div><span>Problem</span><strong>Slow delivery and repeated engineering effort</strong></div>
+              <div><span>Approach</span><strong>AWS platform design, Infrastructure as Code, reusable workflow automation</strong></div>
+              <div><span>Outcome</span><strong>40% faster pipelines, 60% faster delivery</strong></div>
+            </div>
+          </article>
+          <article class="case">
+            <span class="tag">BMS</span>
+            <h3>Clinical Data Repository migration at enterprise scale</h3>
+            <p>Built end-to-end data products with Glue, DMS, Step Functions, Airflow, and AppFlow, migrating 8+ platforms with 99.9% integrity and 35% faster delivery cycles.</p>
+            <div class="meta">
+              <div><span>Problem</span><strong>Fragmented clinical data sources with heavy compliance needs</strong></div>
+              <div><span>Approach</span><strong>Automated migration, validation, and governed access controls</strong></div>
+              <div><span>Outcome</span><strong>99.9% integrity, 35% cycle reduction</strong></div>
+            </div>
+          </article>
+          <article class="case">
+            <span class="tag">Applied AI</span>
+            <h3>Text-to-SQL and metadata-driven discovery tools</h3>
+            <p>Built tools such as ChatSTTM and AI Data Assistant to reduce query friction, improve data discovery, and simplify access to analytical systems.</p>
+            <div class="meta">
+              <div><span>Problem</span><strong>Warehouse complexity slows analytical access</strong></div>
+              <div><span>Approach</span><strong>NLP workflows, schema-aware query generation, recommendation logic</strong></div>
+              <div><span>Outcome</span><strong>Faster querying and stronger self-service adoption</strong></div>
+            </div>
+          </article>
+          <article class="case">
+            <span class="tag">ZS</span>
+            <h3>Data products and ETL automation for pharma clients</h3>
+            <p>Delivered 15+ analytics platforms, supported supply-chain data infrastructure, and reduced manual ETL effort by 70% through automation.</p>
+            <div class="meta">
+              <div><span>Problem</span><strong>Manual workflows and fragmented analytics delivery</strong></div>
+              <div><span>Approach</span><strong>Reusable ETL automation and governed data products</strong></div>
+              <div><span>Outcome</span><strong>15+ platforms delivered, 70% less manual effort</strong></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container reveal" id="experience">
+        <div class="section-head">
+          <span class="eyebrow">Experience</span>
+          <h2>Built in systems where reliability is non-negotiable.</h2>
+          <p>Experience across cloud infrastructure, migration-heavy systems, clinical data products, and production analytics platforms.</p>
+        </div>
+        <div class="grid-3">
+          <article class="experience-card">
+            <div class="experience-top">
+              <div>
+                <h3>Manager, Data Engineer</h3>
+                <p>Merck Sharp & Dohme (MSD) India · Sep 2025 — Present</p>
+              </div>
+            </div>
+            <ul>
+              <li>Architected scalable AWS infrastructure for 50+ stakeholders.</li>
+              <li>Cut pipeline processing time by 40%.</li>
+              <li>Cut deployment time by 60% through self-service automation.</li>
+            </ul>
+          </article>
+          <article class="experience-card">
+            <div class="experience-top">
+              <div>
+                <h3>Data Engineer II</h3>
+                <p>Bristol Myers Squibb · Feb 2024 — Sep 2025</p>
+              </div>
+            </div>
+            <ul>
+              <li>Built clinical data products with Glue, DMS, Airflow, and Step Functions.</li>
+              <li>Maintained 99.9% migration integrity across 8+ source platforms.</li>
+              <li>Cut manual effort by 80% across 500+ GB monthly validation workloads.</li>
+            </ul>
+          </article>
+          <article class="experience-card">
+            <div class="experience-top">
+              <div>
+                <h3>Associate Consultant</h3>
+                <p>ZS Associates · Jan 2021 — Jan 2024</p>
+              </div>
+            </div>
+            <ul>
+              <li>Delivered 15+ analytics platforms for pharma clients.</li>
+              <li>Built infrastructure for supply chain optimization programs.</li>
+              <li>Cut manual ETL effort by 70% using Python and Shell-based automation.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="container reveal" id="stack">
+        <div class="section-head">
+          <span class="eyebrow">Stack</span>
+          <h2>Cloud infrastructure. Orchestration. AI workflows.</h2>
+          <p>AWS Glue, Lake Formation, Athena, DMS, DataSync, AppFlow, Step Functions, CloudFormation, Airflow, Databricks, DBT, Python, SQL, Bash, Terraform, LangChain, LangGraph, and applied ML tooling.</p>
+        </div>
+        <div class="grid-2">
+          <article class="stack">
+            <h3>Core profile</h3>
+            <p>AWS Certified — builds scalable cloud-native systems, resolves complex pipeline failures, and improves architecture in regulated environments.</p>
+            <div class="pill-row">
+              <span class="pill">AWS</span>
+              <span class="pill">Python</span>
+              <span class="pill">SQL</span>
+              <span class="pill">Airflow</span>
+              <span class="pill">Databricks</span>
+              <span class="pill">LangChain</span>
+            </div>
+          </article>
+          <article class="stack">
+            <h3>Education</h3>
+            <p>B.Tech in Computer Science and Engineering from DIT University, 2017–2021, GPA 7.64/10.<br><br>M.Tech in AI & ML, April 2026.<br><br>AWS Certified Data Engineer Associate, Dec 2024.</p>
+            <div class="pill-row">
+              <span class="pill">TIBCO Data Science</span>
+              <span class="pill">TIBCO Spotfire</span>
+              <span class="pill">Scrum Foundation</span>
+              <span class="pill">Good Clinical Practice</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container reveal" id="contact">
+        <div class="contact-card">
+          <div class="section-head" style="margin-bottom:0;max-width:48rem;">
+            <span class="eyebrow">Contact</span>
+            <h2>Open to high-impact data engineering roles.</h2>
+            <p>Based in Hyderabad, India. Reach me at <a href="mailto:tejasnov22@gmail.com" style="color:var(--color-primary);font-weight:700;">tejasnov22@gmail.com</a> or connect on LinkedIn.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container foot">
+        <p>© 2026 Tejas Anand</p>
+        <p>Hyderabad, India</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const toggle=document.querySelector('[data-theme-toggle]');
+      const root=document.documentElement;
+      let theme=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+      root.setAttribute('data-theme',theme);
+      const icon=()=>theme==='dark'
+        ?'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
+        :'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+      if(toggle){toggle.innerHTML=icon();toggle.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';root.setAttribute('data-theme',theme);toggle.innerHTML=icon();});}
+      const io=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting)entry.target.classList.add('is-visible');});},{threshold:.12});
+      document.querySelectorAll('.reveal').forEach((el)=>io.observe(el));
+    })();
+  </script>
+</body>
+</html>
